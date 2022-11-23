@@ -1,0 +1,11 @@
+<h2> Room Index </h2>
+<% @rooms.each do |room| %>
+<p> Room: 
+<%= link_to room.name, room %>
+</p>
+<p>
+capacity: 
+<%= room.capacity %>
+</p>
+<%  end %>
+<%= link_to "Create New Room", new_room_path %>

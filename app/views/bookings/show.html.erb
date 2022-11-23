@@ -1,0 +1,6 @@
+<%= @booking.end %>
+<%= @booking.start %>
+<%= @booking.purpose %>
+<%= @booking.room.name %>
+<%= button_to 'Destroy this booking', @booking, method: :delete %>
+<br><%= link_to "booking", bookings_path %>
